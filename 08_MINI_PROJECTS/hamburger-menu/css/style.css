@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
-  --secondary-color: rgba(229, 148, 0, 0.9);
-  --overlay-color: rgba(24, 39, 51, 0.85);
+  --secondary-color: rgba(229, 148, 0 , 0.9);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
   --menu-speed: 0.75s;
 }
 
@@ -27,9 +25,9 @@ body {
 
 #showcase {
   background: var(--primary-color);
-  color: white;
+  color: #fff;
   height: 100vh;
-  position: absolute;
+  position: relative;
 }
 
 #showcase:before {
@@ -67,7 +65,7 @@ body {
   color: #fff;
   padding: 0.75rem 1.5rem;
   margin-top: 1rem;
-  transition: opacity 1sec ease-in-out;
+  transition: opacity 1s ease-in-out;
   text-decoration: none;
 }
 
