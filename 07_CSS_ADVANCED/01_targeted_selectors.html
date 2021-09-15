@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeted Selectors</title>
+    <style>
+        div > p {
+            background: #ddd;
+        }
+        div + p {
+            background: #333;
+            color: #fff;
+        }
+        a[target] {
+            background: red;
+            color: white;
+        }
+        input[type='text'], input[type='email'] {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- div p, for every p in the div -->
+    <!-- div > p, for every p that is a direct child of the div -->
+    <!-- div + p, directly after, not for the children -->
+
+    <div>
+        <p>This p is a direct child of the div</p>
+
+        <ul>
+            <li>Item 1</li>
+            <li><p>This Item 2 is in a p</p></li>
+            <li>Item 3</li>
+        </ul>
+
+        <p>This p i a direct child of the div</p>
+    </div>
+
+    <p>This p is not a direct child, but comes right after the div</p>
+
+    <a href="#">Page 1</a>
+    <a href="#" target="_self">Page 2</a>
+    <a href="http://google.com" target="_blank">Google</a>
+    <br><br>
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="submit" placeholder="Submit">
+    </form>
+</body>
+</html>
